@@ -1,0 +1,7 @@
+export const GET_ITEM = 'GET_ITEM'
+export const GET_ITEM_INFO = 'GET_ITEM_INFO'
+export const INCREMENT_COUNT = 'INCREMENT_COUNT'
+export const DECREMENT_COUNT = 'DECREMENT_COUNT'
+
+
+

@@ -1,0 +1,146 @@
+.items_inner{
+    display: flex;
+    justify-content: space-evenly;
+}
+.filter{
+    width: 20%;
+}
+.image_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_block{
+    width: 98%;
+}
+.photo{
+    overflow: hidden;
+
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    animation: Anim 15s linear infinite;
+}
+.store_info{
+    margin: 0 auto;
+    text-align: center;
+    padding: 3% 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.store_info_top{
+    position: relative;
+    width: 10%;
+    margin: 0 auto;
+}
+.store_info_top:before{
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 3px;
+    background-color: #444631;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -18px;
+}
+.store_info_bottom{
+    margin: 40px auto;
+    width: 30%;
+    font-size: 13px;
+}
+
+.item_img{
+    height: 190px;
+    width: 170px;
+}
+.item_section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    gap: 30px;
+    
+
+    .pages{
+        margin: 20px 0px;
+    
+        page{
+            border: 1px solid gray;
+            border-radius: 100%;
+            padding: 5px 10px;
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+      }
+}
+.items{
+    display: flex;
+    width: 31%;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.items button {
+    width: 100%;
+    height: 40px;
+    background-color: #444631;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+.items:hover button {
+    opacity: 1;
+}
+
+@keyframes Anim {
+    0%{
+        transform: scale(1.00);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.00);
+    }
+}
+
+
+#container {
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .items {
+    margin-bottom: 1rem;
+  }
+
+
+
+
+
+  // *******************************  RESPONSIVE  **************************************
+
+  @media(width:768px){
+    .filter{
+        display: none;
+    }
+    .item_section{
+        width: 80%;
+        margin-left: 30%;
+    }
+  }
+
+  @media(width:425px){
+    .filter{
+        display: none;
+    }
+    .item_section{
+        width: 100%;
+        margin-left: 10%;
+    }
+   
+  }

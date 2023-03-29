@@ -1,0 +1,275 @@
+.back-img {
+    width: 100%;
+    height: 600px;
+    margin-top: 60px;
+    object-fit: cover;
+   
+    
+    .title-text {
+        width: 44%;
+        height: 280px;
+        font-size: 16.5px;
+        position: absolute;
+        color: white;
+        top: 35%;
+        left: 5%;
+        font-family: 'Montserrat', sans-serif;
+          
+        h3 {
+            line-height:32px;
+            margin-top: 20px;
+        }
+        button{
+            width: 160px;
+            height: 48px;
+            font-size: 11px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #444631;
+            color: white;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        button:hover {
+            background-color: #545745;
+
+        }
+
+
+    }
+    .img-box{
+        overflow: hidden;
+        width: 100%;
+        height: 650px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            animation: move 45s linear infinite;
+           
+        }
+
+
+    }
+    @keyframes move {
+        0%{
+            transform: scale(1.00);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+        100%{
+            transform: scale(1.00);
+        }
+    }
+
+    }
+
+ 
+    .container{
+        width: 100%;
+        height: 1200px;
+        margin-top: 75px;
+
+
+        .btm-container{
+            width: 100%;
+            height: 650px;
+            margin-top: 100px;
+            
+        
+        
+            .img-box{
+                width: 90%;
+                height: 600px;
+                position: absolute;
+                overflow: hidden;
+                left: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                .white_logo{
+                    width: 200px;
+                    height: 50px;
+                    position: absolute;
+                    z-index: 20;
+                    color: white;
+                    margin-top: -25%;
+                }
+        
+                .title-box{
+                    width: 820px;
+                    height: 200px;
+                    position: absolute;
+                    z-index: 15;
+                    text-align: center;
+                    line-height: 45px;
+           
+                    p{
+                        font-size: 23px;
+                        color: white;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
+                    }
+        
+                    h3{
+                        font-size: 22px;
+                        color: white;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;  
+                    }
+        
+                    a{
+                        font-size: 12.5px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: white;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    a:hover{
+                        color: rgb(214, 214, 214);
+                    }
+                }
+        
+             
+                span{
+                width: 100%;
+                height: 600px;
+                position: absolute;
+                background-color: #54492a93;
+                opacity: 1;
+                z-index: 10;
+                }
+        
+                .back-img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    animation: move2 38s linear infinite;
+                    z-index: 1;
+                }
+                
+                @keyframes move2 {
+                    0%{
+                        transform: scale(1.0);
+                    }
+                    25%{
+                        transform: scale(1.5);
+                    }
+                    50%{
+                        transform: scale(1.5);
+                    }
+                    100%{
+                        transform: scale(1.5);
+                    }
+                }
+             
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+// *******************************  RESPONSIVE  **************************************
+
+
+    
+@media(width:768px){ 
+  
+    .back-img {
+
+        .img-box {
+
+            .white_logo {
+                    display: none; 
+            }
+        }
+ 
+     .title-text {
+        font-size: 14.5px;
+     button {
+         width: 120px;
+         height: 40px;
+        }
+     }
+ 
+    }
+    .container {
+
+        .btm-container{
+
+            .img-box{
+
+                .title-box {
+                     width: 400px;
+
+                    h3{
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+ 
+ }
+
+ @media(width:425px){ 
+
+  .back-img {
+    .img-box {
+
+        .white_logo {
+                display: none; 
+        }
+    }
+     .title-text {
+        width: 55%;
+        font-size: 12.5px;
+     button {
+         width: 120px;
+         height: 40px;
+      }
+
+     }
+ 
+    }
+ 
+    .container {
+
+        .btm-container{
+
+            .img-box{
+
+                .title-box {
+                     width: 350px;
+
+                    h3{
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+ }

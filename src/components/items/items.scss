@@ -1,0 +1,20 @@
+.pages{
+    padding-left: 75px;
+    width: 70%;
+    height: 200px;
+    background-color: rgb(201, 156, 156);
+
+
+    .page, .current-page{
+        border: 1px solid gray;
+        border-radius: 100%;
+        padding: 5px 10px;
+        margin: 40px 10px;
+        cursor: pointer;
+        
+        .current-page {
+            border: 2px solid gray;
+            font-weight: 700;
+        }
+    }
+  }
